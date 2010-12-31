@@ -15,10 +15,24 @@ Usage
 
 To use this archetype is straightforward, just issue the command
 
-       mvn archetype:generate -DarchetypeCatalog=local
+      mvn archetype:generate -DarchetypeCatalog=local
 
 select the archetype named "local -> simple-s4-project (simple-s4-project)" and
 follow Maven instructions to create your project.
+
+If you prefer not to use Maven's interactive mode, you can execute
+
+      mvn archetype:generate -DarchetypeCatalog=local -DinteractiveMode=false \
+           -DarchetypeGroupId=io.s4.maven.archetypes \
+			  -DarchetypeArtifactId=simple-s4-project -DarchetypeVersion=0.0.0.1 \
+			  -DartifactId=<ARTIFACT_ID> -DgroupId=<GROUP_ID> \
+			  -Dversion=<VERSION> -Dackage=<PACKAGE>
+
+Where
+	ARTIFACT_ID: your project name
+	GROUP_ID: the group your project belongs to
+	VERSION: the version of your project
+	PACKAGE: the base package to your project
 
 After the project creation, you'll find build instructions in a README.md file inside
 the project directory.
