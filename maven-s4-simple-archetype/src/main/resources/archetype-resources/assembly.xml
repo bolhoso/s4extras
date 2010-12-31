@@ -35,7 +35,7 @@
          <directory>${symbol_dollar}{project.basedir}/src/main/resources</directory>
          <outputDirectory />
          <includes>
-            <include>app_conf.xml</include>
+            <include>${artifactId}_conf.xml</include>
          </includes>
       </fileSet>
    </fileSets>
