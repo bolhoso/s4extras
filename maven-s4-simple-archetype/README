@@ -1,0 +1,24 @@
+Overview
+--------
+
+This is a Maven archetype to create a simple S4 project.
+
+Installation
+------------
+
+To install the archetype, simply execute
+
+mvn install
+
+Usage
+-----
+
+To use this archetype is straightforward, just issue the command
+
+       mvn archetype:generate -DarchetypeCatalog=local
+
+select the archetype named "local -> simple-s4-project (simple-s4-project)" and
+follow Maven instructions to create your project.
+
+After the project creation, you'll find build instructions in a README.md file inside
+the project directory.
