@@ -4,7 +4,7 @@
 
   <groupId>io.s4.maven.archetypes</groupId>
   <artifactId>simple-s4-project</artifactId>
-  <version>0.0.2</version>
+  <version>0.0.3-SNAPSHOT</version>
   <packaging>maven-archetype</packaging>
 
   <name>simple-s4-project</name>
