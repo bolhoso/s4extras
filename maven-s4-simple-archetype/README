@@ -24,7 +24,7 @@ If you prefer not to use Maven's interactive mode, you can execute
 
       mvn archetype:generate -DarchetypeCatalog=local -DinteractiveMode=false \
            -DarchetypeGroupId=io.s4.maven.archetypes \
-			  -DarchetypeArtifactId=simple-s4-project -DarchetypeVersion=0.0.0.1 \
+			  -DarchetypeArtifactId=simple-s4-project -DarchetypeVersion=0.0.2-SNAPSHOT \
 			  -DartifactId=<ARTIFACT_ID> -DgroupId=<GROUP_ID> \
 			  -Dversion=<VERSION> -Dackage=<PACKAGE>
 
