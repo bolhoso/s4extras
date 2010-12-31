@@ -9,6 +9,29 @@
 
   <name>simple-s4-project</name>
 
+  <scm>
+	  <connection>
+		  scm:git:git://github.com/bolhoso/s4extras.git
+	  </connection>
+	  <developerConnection>
+        scm:git:git://git@github.com/bolhoso/s4extras.git
+	  </developerConnection>
+	  <url>
+        http://github.com/bolhoso/s4extras
+	  </url>
+  </scm>
+
+  <distributionManagement>
+	  <repository>
+		  <id>release-repo</id>
+		  <url>file:///home/lucas/sandbox/maven-s4/release-repository</url>
+	  </repository>
+	  <snapshotRepository>
+		  <id>snapshot-repo</id>
+		  <url>file:///home/lucas/sandbox/maven-s4/snapshot-repository</url>
+	  </snapshotRepository>
+  </distributionManagement>
+
   <build>
     <extensions>
       <extension>
