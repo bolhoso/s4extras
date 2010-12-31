@@ -17,7 +17,7 @@ public class StringReceiverPE extends AbstractPE {
      * @param sentence The sentence entering the system
      */
     public void processEvent(Sentence sentence) {
-      System.out.printf ("The sentence " + Long.toString (sentence.getId()) + " have been received. Text: " + sentence.getText());
+      System.out.printf ("The sentence %d have been received. Text: %s\n", sentence.getId(), sentence.getText());
       Logger.getLogger("s4").info("Sentence received " + Long.toString (sentence.getId()));
     }
     
