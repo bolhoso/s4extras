@@ -1,0 +1,42 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<?xml version="1.0"?>
+<assembly>
+   <id />
+   <formats>
+      <format>tar.gz</format>
+   </formats>
+
+   <includeBaseDirectory>true</includeBaseDirectory>
+   <baseDirectory>${symbol_dollar}{artifactId}</baseDirectory>
+   <dependencySets>
+      <dependencySet>
+         <unpack>false</unpack>
+         <outputDirectory>lib</outputDirectory>
+         <scope>runtime</scope>
+         <useProjectArtifact>false</useProjectArtifact>
+         <excludes>
+            <exclude>log4j:log4j</exclude>
+         </excludes>
+      </dependencySet>
+   </dependencySets> 
+
+   <fileSets>
+      <fileSet>
+         <directory>${symbol_dollar}{project.basedir}/target</directory>
+         <outputDirectory>lib</outputDirectory>
+         <includes>
+            <include>*.jar</include>
+         </includes>
+      </fileSet>
+
+      <fileSet>
+         <directory>${symbol_dollar}{project.basedir}/src/main/resources</directory>
+         <outputDirectory />
+         <includes>
+            <include>app_conf.xml</include>
+         </includes>
+      </fileSet>
+   </fileSets>
+</assembly>
