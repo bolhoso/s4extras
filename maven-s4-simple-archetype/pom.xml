@@ -21,17 +21,6 @@
 	  </url>
   </scm>
 
-  <distributionManagement>
-	  <repository>
-		  <id>release-repo</id>
-		  <url>file:///home/lucas/sandbox/maven-s4/release-repository</url>
-	  </repository>
-	  <snapshotRepository>
-		  <id>snapshot-repo</id>
-		  <url>file:///home/lucas/sandbox/maven-s4/snapshot-repository</url>
-	  </snapshotRepository>
-  </distributionManagement>
-
   <build>
     <extensions>
       <extension>
