@@ -1,0 +1,21 @@
+*~
+target/
+# Eclipse meta-information
+/.project
+/.classpath
+/.settings
+
+#IntelliJ
+.idea
+*.iml
+
+#Misc
+*~
+.*.sw?
+
+
+# Build directory
+/target/*
+
+# SVN
+.svn
