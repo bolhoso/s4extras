@@ -1,4 +1,0 @@
-{"io.s4.examples.Sentence":{"classIndex":0,"streamName":"RawSentence"}}
-{"_index":0,"id":1001,"text":"This is a first sentence.","time":12345}
-{"_index":0,"id":1001,"text":"This is a sencondsentence.","time":55555}
-{"_index":0,"id":1001,"text":"Oh, my! Another sentence!","time":66666}

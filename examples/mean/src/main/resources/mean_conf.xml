@@ -3,11 +3,13 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans             http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
 
   <!-- Process the incoming sentence and print them to standard output -->
-  <bean id="eventCatcher" class="io.s4.examples.StringReceiverPE">
+  <bean id="eventCatcher" class="io.s4.examples.MeanPE">
     <property name="keys">
       <list>
-        <value>RawSentence *</value>
+        <value>RawTerm *</value>
       </list>
     </property>
+    
+    <property name="lastN" value="4"/>
   </bean>
 </beans>
